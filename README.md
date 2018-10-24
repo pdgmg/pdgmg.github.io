@@ -1,1 +1,0 @@
-# pdgmg.github.io
