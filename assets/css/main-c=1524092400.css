@@ -296,3 +296,13 @@ a.logo:hover{color:white;}
   .animated-from-left {position: relative;height:100vh;}
   .logos-sc {max-width:700px;float: right}
 }
+@media all and (max-width: 699px) {
+  .video video {
+    width: 100% !important;
+  }
+}
+@media all and (min-width: 700px) {
+  .video video {
+    width: 100% !important;
+  }
+}
