@@ -190,7 +190,8 @@ h3, .h3 { font-size: 4.8vw; margin-bottom: 3.378378vw; color: #fff; }
   #nav { width: 40vw; padding-top: 1.351351vw; }
   #menu-home { top: 2.702702vw; }
   ul.nav { margin-top: 12.837838vw; font-size: 3.04054vw; line-height: 4.054054vw; }
-  p { margin-bottom: 2.027027vw; }
+  p { margin-bottom: 2.027027vw; font-size: 2.6666667vw;
+line-height: 3.1111117vw;}
   header { padding-bottom: 1.351351vw; padding-top: 1.351351vw; margin-bottom: 2.702702vw; font-size: 1.216216vw; line-height: 2.027027vw; }
   section { padding-bottom: 16.216216vw; }
   .banner { padding-top: 1.351351vw; }
