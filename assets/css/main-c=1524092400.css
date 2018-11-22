@@ -98,6 +98,9 @@ a.project-item { color: #fff; }
 .project-list-head { margin-top: 3.3783783vw; margin-bottom: 3.3783783vw; }
 .project-list-info { padding-top: 2.702702vw; min-height: 27.027vw;   font-size: 4.8vw; line-height: 6.666667vw; }
 
+.project-item:not(.nohover):hover { background-color: transparent; }
+
+
 .wide-img { margin-bottom: 13.513513vw; }
 .img-container { background: transparent none no-repeat center center; background-size: cover; position: relative; }
 /*.img-container:before { content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: #000; opacity: 0; transition: 1.5s; }*/
@@ -169,6 +172,8 @@ h3, .h3 { font-size: 4.8vw; margin-bottom: 3.378378vw; color: #fff; }
   .bigger .head { color: #fff; font-size: 2.702702vw; line-height: 3.378378vw; }
   .tag { font-size: 1.216216vw; }
   .fs30 { font-size: 1.5em; }
+  .fs15 { font-size: 0.8em; line-height: 1.2vw;}
+  span.fs15 { line-height: 0.8vw;}
   .proj-category { margin-bottom: 4.054054vw; }
   .proj-info { margin-bottom: 2.027027vw; }
   .bigc { font-size: 13.513513vw; line-height: 13.513513vw; }
