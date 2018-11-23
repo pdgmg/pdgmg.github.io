@@ -27,10 +27,6 @@
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 				<link href="../assets/css/bootstrap.min-c=1524092400.css" media="all" rel="stylesheet" />
 				<link href="../assets/css/main-c=1524092400.css" media="all" rel="stylesheet" />
-				<script>
-					if (typeof fuel == 'undefined') fuel = {}
-				</script>
-				<link href="..assets/css/fuel_inline.css?c=1524092400" media="all" rel="stylesheet" />
 			</head>
 <body class="animated"><a name="top" id="top"></a>
 	<header>
@@ -196,7 +192,7 @@
 		<script>
 			window.time_diff = 0;
 			xhr = new XMLHttpRequest();
-			xhr.open('POST', '/get_time.php');
+			xhr.open('POST', '/get_time');
 			xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 			xhr.onload = function () {
 				if (xhr.status == 200) {
@@ -247,8 +243,5 @@
 	<script src="../assets/js/jquery-c=1524092400.js" defer="defer" type="text/javascript" charset="utf-8"></script>
 	<script src="../assets/js/jquery.lazy-c=1524092400.js" defer="defer" type="text/javascript" charset="utf-8"></script>
 	<script src="../assets/js/main-c=1524092400.js" defer="defer" type="text/javascript" charset="utf-8"></script>
-
-	<script src="../assets/js/fuel_inline.min.js?c=1524092400" type="text/javascript"
-	 charset="utf-8"></script>
 </body>
 </html>
