@@ -360,9 +360,11 @@ max-width: 80% !important;
   .video video {
     width: 100% !important;
   }
+  .desktop {display:none}
 }
 @media all and (min-width: 700px) {
   .video video {
     width: 100% !important;
   }
+  .mobile {display:none}
 }
