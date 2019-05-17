@@ -458,9 +458,10 @@ video {width: 100%;}
   }
 
   .red-label {position: absolute;margin-top: 15%;margin-left: 10%;padding:20px;font-size:1em;background: rgba(255, 0, 0, 0.8);color: white}
-  .photos {width: 150px; !important}
+  .photos {width: 45%; !important}
   .photos:first-child {margin-right: 20px}
   .desktop img, .coming {display:none !important;}
+  .mobile {width: 50% !important;} 
 }
 @media all and (min-width: 700px) {
   .video video {
