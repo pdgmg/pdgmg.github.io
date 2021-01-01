@@ -73,10 +73,12 @@ Function Page Load
 		// Fading Out Loadbar on Finised
 		setTimeout(function(){
 			$('.loadbar').append('<span class="hold-progress-bar"></span>');
-			$('body').append('<audio loop autoplay volume="0" id="audio"><source src="audio/2242354509.m4a" type="audio/mpeg" /></audio>');
-			var audio = document.getElementById("audio");    
-			audio.volume = 0.2;
-			audio.play();
+		//	$('body').append('<audio loop autoplay volume="0" id="audio"><source src="audio/2242354509.m4a" type="audio/mpeg" /></audio>');
+		//	var audio = document.getElementById("audio");    
+		//	audio.volume = 0.2;
+		//	audio.play();
+		var vid = document.getElementById("bgvid");
+		vid.volume = 0.1;
 			TweenMax.to($('.hold-progress-bar'), 1, {force3D:true,width:'100%', delay:0.1, ease:Power2.easeOut, onComplete:function(){
 				TweenMax.set($(".trackbar"), {visibility:'hidden', opacity:0});
 				$('body').waitForImages({
@@ -330,21 +332,21 @@ Function First Load
 		
 		
 		$(".button-wrap.left").on('click', function() {
-			var audio = document.getElementById("audio");
+			var vid = document.getElementById("bgvid");
 			$('body').toggleClass("mute");
 			$(this).toggleClass("disabled");			   
 			if ($(this).hasClass('disabled')) {
 				$('.button-text span').text($('.button-text span').data('off'));
 				$('.button-text span').attr("data-off", $('.button-text span').data('on'));
 				$('.button-text span').attr("data-on", $('.button-text span').text());
-				audio.volume = 0;
-				audio.pause();
+				vid.volume = 0;
+				vid.play();
 			} else {
 				$('.button-text span').text($('.button-text span').data('on'));
 				$('.button-text span').attr("data-on", $('.button-text span').data('on'));
 				$('.button-text span').attr("data-off", $('.button-text span').data('off'));
-				audio.volume = 0.2;
-				audio.play();
+				vid.volume = 0.2;
+				vid.play();
 			}
 		});		
 		
@@ -494,21 +496,21 @@ Function First Load
 				$("html, body").animate({ scrollTop: scrollIt }, 350);                
 			}
 			
-			var audio = document.getElementById("audio");
+			var vid = document.getElementById("bgvid");
 			$('body').toggleClass("mute");
 			$(".icon-wrap").toggleClass("disabled");			   
 			if ($(".icon-wrap").hasClass('disabled')) {
 				$('.button-text span').text($('.button-text span').data('off'));
 				$('.button-text span').attr("data-off", $('.button-text span').data('on'));
 				$('.button-text span').attr("data-on", $('.button-text span').text());
-				audio.volume = 0;
-				audio.pause();
+				vid.volume = 0;
+				vid.play();
 			} else {
 				$('.button-text span').text($('.button-text span').data('on'));
 				$('.button-text span').attr("data-on", $('.button-text span').data('on'));
 				$('.button-text span').attr("data-off", $('.button-text span').data('off'));
-				audio.volume = 0.2;
-				audio.play();
+				vid.volume = 0.2;
+				vid.play();
 			}			
 							
 		});
